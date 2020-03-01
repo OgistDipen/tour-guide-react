@@ -3,6 +3,7 @@ import ResponsiveNavbarStyle from "./style";
 import { Link } from "react-router-dom";
 import SVGInline from "react-svg-inline";
 import { logo, x, burger } from "../../assets/icons";
+import { withRouter } from "react-router";
 
 class ResponsiveNavbar extends Component {
   constructor() {
@@ -20,12 +21,10 @@ class ResponsiveNavbar extends Component {
     this.setState({ toggleMenu: false });
   };
 
-  closeMenuAndChangePage = link => {
+  closeMenuAndChangePage = () => {
     this.setState({ toggleMenu: false });
-    setTimeout(() => {
-      window.location.href = `${link}`;
-    }, 500);
   };
+
   render() {
     return (
       <ResponsiveNavbarStyle>
@@ -52,41 +51,24 @@ class ResponsiveNavbar extends Component {
         >
           <ul>
             <li>
-              <p
-                onClick={() => {
-                  this.closeMenuAndChangePage("/");
-                }}
-              >
+              <Link to={"/"} onClick={this.closeMenuAndChangePage}>
                 Home
-              </p>
+              </Link>
             </li>
             <li>
-              <p
-                onClick={() => {
-                  this.closeMenuAndChangePage("about");
-                }}
-              >
+              <Link to={"/about"} onClick={this.closeMenuAndChangePage}>
                 About
-              </p>
+              </Link>
             </li>
             <li>
-              <p
-                to="/contact"
-                onClick={() => {
-                  this.closeMenuAndChangePage("contact");
-                }}
-              >
+              <Link to={"/contact"} onClick={this.closeMenuAndChangePage}>
                 Contact
-              </p>
+              </Link>
             </li>
             <li>
-              <p
-                onClick={() => {
-                  this.closeMenuAndChangePage("#");
-                }}
-              >
-                Book Now
-              </p>
+              <Link to={"#"} onClick={this.closeMenuAndChangePage}>
+                Book now
+              </Link>
             </li>
           </ul>
         </div>
@@ -95,4 +77,4 @@ class ResponsiveNavbar extends Component {
   }
 }
 
-export default ResponsiveNavbar;
+export default withRouter(ResponsiveNavbar);

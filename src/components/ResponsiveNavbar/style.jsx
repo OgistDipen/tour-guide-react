@@ -68,7 +68,7 @@ const ResponsiveNavbarStyle = styled.header`
         text-align: center;
         display: block;
 
-        p {
+        a {
           position: relative;
           text-decoration: none;
           font-size: 30px;
