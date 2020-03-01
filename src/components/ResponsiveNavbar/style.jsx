@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const ResponsiveNavbarStyle = styled.header`
   height: 75px;
@@ -68,7 +68,7 @@ const ResponsiveNavbarStyle = styled.header`
         text-align: center;
         display: block;
 
-        a {
+        p {
           position: relative;
           text-decoration: none;
           font-size: 30px;
@@ -85,6 +85,6 @@ const ResponsiveNavbarStyle = styled.header`
   #responsive-header-menu.active {
     transform: scale(1);
   }
-`
+`;
 
-export default ResponsiveNavbarStyle
+export default ResponsiveNavbarStyle;

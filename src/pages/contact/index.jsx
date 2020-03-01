@@ -1,10 +1,16 @@
 import React from "react";
+import ContactStyle from "./style";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const ContactPage = () => (
-  <Layout>
-    <SEO title="Contact" />
-    Contact
-  </Layout>
+  <>
+    <Header />
+    <ContactStyle>
+      <p>ABOUT PAGE</p>
+    </ContactStyle>
+    <Footer />
+  </>
 );
 
 export default ContactPage;

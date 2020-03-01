@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const ContactStyle = styled.div`
-  padding: 0px 380px;
   background: #fbfcfd;
-`
+  height: calc(100vh - 75px);
+`;
 
-export default ContactStyle
+export default ContactStyle;

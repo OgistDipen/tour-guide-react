@@ -13,17 +13,20 @@ class ResponsiveNavbar extends Component {
   }
 
   toggleResponsiveMenu = () => {
-    // this.props.toggleMenu()
     this.setState({ toggleMenu: !this.state.toggleMenu });
   };
 
   closeMenu = () => {
-    // this.props.toggleMenu()
     this.setState({ toggleMenu: false });
   };
-  render() {
-    console.log("toggleMenu RES", this.state.toggleMenu);
 
+  closeMenuAndChangePage = link => {
+    this.setState({ toggleMenu: false });
+    setTimeout(() => {
+      window.location.href = `${link}`;
+    }, 500);
+  };
+  render() {
     return (
       <ResponsiveNavbarStyle>
         <ul className="navbar">
@@ -49,46 +52,41 @@ class ResponsiveNavbar extends Component {
         >
           <ul>
             <li>
-              <li>
-                <Link
-                  to="/"
-                  onClick={() => {
-                    this.closeMenu();
-                  }}
-                >
-                  Home
-                </Link>
-              </li>
+              <p
+                onClick={() => {
+                  this.closeMenuAndChangePage("/");
+                }}
+              >
+                Home
+              </p>
             </li>
             <li>
-              <Link
-                to="/about"
+              <p
                 onClick={() => {
-                  this.closeMenu();
+                  this.closeMenuAndChangePage("/about");
                 }}
               >
                 About
-              </Link>
+              </p>
             </li>
             <li>
-              <Link
+              <p
                 to="/contact"
                 onClick={() => {
-                  this.closeMenu();
+                  this.closeMenuAndChangePage("/contact");
                 }}
               >
                 Contact
-              </Link>
+              </p>
             </li>
             <li>
-              <Link
-                to="#"
+              <p
                 onClick={() => {
-                  this.closeMenu();
+                  this.closeMenuAndChangePage("#");
                 }}
               >
                 Book Now
-              </Link>
+              </p>
             </li>
           </ul>
         </div>

@@ -1,8 +1,9 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const AboutStyle = styled.div`
-  padding: 0px 380px;
-  background: #fbfcfd;
-`
+  min-height: calc(100vh - 75px);
+  padding: 50px 390px;
+  position: relative;
+`;
 
-export default AboutStyle
+export default AboutStyle;
