@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const ContactStyle = styled.div`
   background: #fbfcfd;
-  height: calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
+  position: relative;
 
   @media only screen and (max-width: 460px) {
     width: 100%;

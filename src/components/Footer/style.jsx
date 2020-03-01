@@ -109,6 +109,9 @@ const FooterStyle = styled.div`
     .socialIcons {
       margin-right: 100px;
       position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
       svg {
         width: 30px;
         height: 30px;
@@ -168,6 +171,7 @@ const FooterStyle = styled.div`
       flex-direction: column-reverse;
 
       .socialIcons {
+        justify-content: center;
         margin-bottom: 30px;
       }
     }

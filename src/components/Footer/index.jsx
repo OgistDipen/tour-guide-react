@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FooterStyle from "./style";
 import { Link } from "react-router-dom";
 import SVGInline from "react-svg-inline";
-import { logo, fb, ins, tw, li } from "../../assets/icons";
+import { fb, ins, tw, li } from "../../assets/icons";
 import ScrollUpButton from "../ScrollUpButton";
 
 export default class Footer extends Component {

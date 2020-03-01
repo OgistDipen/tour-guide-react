@@ -8,7 +8,7 @@ import ResponsiveNavbar from "../../components/ResponsiveNavbar";
 import Translate from "react-translate-component";
 import counterpart from "counterpart";
 import en from "../../lang/en";
-import sr from "../../lang/sr";
+// import sr from "../../lang/sr";
 
 counterpart.registerTranslations("en", en);
 // counterpart.registerTranslations("sr", sr);
