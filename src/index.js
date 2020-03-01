@@ -7,6 +7,12 @@ import history from "./history";
 import Main from "./switch/Main";
 import GlobalStyle from "./styles/GlobalStyle";
 
+history.listen(location => {
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  });
+});
+
 ReactDOM.render(
   <Router history={history}>
     <GlobalStyle />

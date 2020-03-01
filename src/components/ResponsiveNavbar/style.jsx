@@ -5,6 +5,7 @@ const ResponsiveNavbarStyle = styled.header`
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   position: relative;
+  z-index: 999;
 
   .navbar {
     display: flex;

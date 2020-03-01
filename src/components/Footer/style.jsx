@@ -104,6 +104,7 @@ const FooterStyle = styled.div`
 
     .privacy {
       opacity: 0.6;
+      width: 100%;
     }
 
     .socialIcons {
@@ -169,6 +170,7 @@ const FooterStyle = styled.div`
     .privacySection {
       display: flex;
       flex-direction: column-reverse;
+      text-align: center;
 
       .socialIcons {
         justify-content: center;

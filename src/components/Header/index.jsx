@@ -59,12 +59,12 @@ class Header extends Component {
             <div className="main-header-items">
               <li>
                 <Link to="/">
-                  <Translate content="home" />
+                  <Translate content="navbar.home" />
                 </Link>
               </li>
               <li>
                 <Link to="/about">
-                  <Translate content="about" unsafe={true} />
+                  <Translate content="navbar.about" unsafe={true} />
                 </Link>
               </li>
             </div>
@@ -77,7 +77,7 @@ class Header extends Component {
               </li> */}
               <li>
                 <Link to="/contact">
-                  <Translate content="contact" />
+                  <Translate content="navbar.contact" />
                 </Link>
               </li>
               <Button

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ToursStyle from "./style";
+import { Link } from "react-router-dom";
 import grass from "../../../assets/images/grass.jpg";
 
 class Tours extends Component {
@@ -28,110 +29,118 @@ class Tours extends Component {
         <div className="tours">
           <div className="row">
             <div className="tour">
-              <div className="image-box">
-                <img src={grass} alt={grass}></img>
-                <div className="price">
-                  1,390 &euro; <p>per person</p>
+              <Link to={`/tours/palic`}>
+                <div className="image-box">
+                  <img src={grass} alt={grass}></img>
+                  <div className="price">
+                    1,390 &euro; <p>per person</p>
+                  </div>
                 </div>
-              </div>
-              <div className="description-box">
-                <div className="tour-type">self-guided walking trip</div>
-                <div className="tour-name">walking the alpe-adria trial</div>
-                <div className="tour-duration">
-                  <b>Duration:</b> 7 days
+                <div className="description-box">
+                  <div className="tour-type">self-guided walking trip</div>
+                  <div className="tour-name">walking the alpe-adria trial</div>
+                  <div className="tour-duration">
+                    <b>Duration:</b> 7 days
+                  </div>
+                  <div className="tour-difficulty">
+                    <b>Difficulty:</b> 3,5/5
+                  </div>
+                  <div className="tour-schedule">
+                    <b>When:</b> June to mid September
+                  </div>
+                  <div className="tour-small-description">
+                    Experience high alpine scenery in the Julian Alps while
+                    hiking beautiful trails without technical difficulties or
+                    sheer drops.{" "}
+                  </div>
                 </div>
-                <div className="tour-difficulty">
-                  <b>Difficulty:</b> 3,5/5
-                </div>
-                <div className="tour-schedule">
-                  <b>When:</b> June to mid September
-                </div>
-                <div className="tour-small-description">
-                  Experience high alpine scenery in the Julian Alps while hiking
-                  beautiful trails without technical difficulties or sheer
-                  drops.{" "}
-                </div>
-              </div>
+              </Link>
             </div>
             <div className="tour">
-              <div className="image-box">
-                <img src={grass} alt={grass}></img>
-                <div className="price">
-                  1,390 &euro; <p>per person</p>
+              <Link to={`/tours/zlatibor`}>
+                <div className="image-box">
+                  <img src={grass} alt={grass}></img>
+                  <div className="price">
+                    1,390 &euro; <p>per person</p>
+                  </div>
                 </div>
-              </div>
-              <div className="description-box">
-                <div className="tour-type">self-guided walking trip</div>
-                <div className="tour-name">walking the alpe-adria trial</div>
-                <div className="tour-duration">
-                  <b>Duration:</b> 7 days
+                <div className="description-box">
+                  <div className="tour-type">self-guided walking trip</div>
+                  <div className="tour-name">walking the alpe-adria trial</div>
+                  <div className="tour-duration">
+                    <b>Duration:</b> 7 days
+                  </div>
+                  <div className="tour-difficulty">
+                    <b>Difficulty:</b> 3,5/5
+                  </div>
+                  <div className="tour-schedule">
+                    <b>When:</b> June to mid September
+                  </div>
+                  <div className="tour-small-description">
+                    Experience high alpine scenery in the Julian Alps while
+                    hiking beautiful trails without technical difficulties or
+                    sheer drops.{" "}
+                  </div>
                 </div>
-                <div className="tour-difficulty">
-                  <b>Difficulty:</b> 3,5/5
-                </div>
-                <div className="tour-schedule">
-                  <b>When:</b> June to mid September
-                </div>
-                <div className="tour-small-description">
-                  Experience high alpine scenery in the Julian Alps while hiking
-                  beautiful trails without technical difficulties or sheer
-                  drops.{" "}
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="row">
             <div className="tour">
-              <div className="image-box">
-                <img src={grass} alt={grass}></img>
-                <div className="price">
-                  1,390 &euro; <p>per person</p>
+              <Link to={`/tours/kopaonik`}>
+                <div className="image-box">
+                  <img src={grass} alt={grass}></img>
+                  <div className="price">
+                    1,390 &euro; <p>per person</p>
+                  </div>
                 </div>
-              </div>
-              <div className="description-box">
-                <div className="tour-type">self-guided walking trip</div>
-                <div className="tour-name">walking the alpe-adria trial</div>
-                <div className="tour-duration">
-                  <b>Duration:</b> 7 days
+                <div className="description-box">
+                  <div className="tour-type">self-guided walking trip</div>
+                  <div className="tour-name">walking the alpe-adria trial</div>
+                  <div className="tour-duration">
+                    <b>Duration:</b> 7 days
+                  </div>
+                  <div className="tour-difficulty">
+                    <b>Difficulty:</b> 3,5/5
+                  </div>
+                  <div className="tour-schedule">
+                    <b>When:</b> June to mid September
+                  </div>
+                  <div className="tour-small-description">
+                    Experience high alpine scenery in the Julian Alps while
+                    hiking beautiful trails without technical difficulties or
+                    sheer drops.{" "}
+                  </div>
                 </div>
-                <div className="tour-difficulty">
-                  <b>Difficulty:</b> 3,5/5
-                </div>
-                <div className="tour-schedule">
-                  <b>When:</b> June to mid September
-                </div>
-                <div className="tour-small-description">
-                  Experience high alpine scenery in the Julian Alps while hiking
-                  beautiful trails without technical difficulties or sheer
-                  drops.{" "}
-                </div>
-              </div>
+              </Link>
             </div>
             <div className="tour">
-              <div className="image-box">
-                <img src={grass} alt={grass}></img>
-                <div className="price">
-                  1,390 &euro; <p>per person</p>
+              <Link to={`/tours/exit`}>
+                <div className="image-box">
+                  <img src={grass} alt={grass}></img>
+                  <div className="price">
+                    1,390 &euro; <p>per person</p>
+                  </div>
                 </div>
-              </div>
-              <div className="description-box">
-                <div className="tour-type">self-guided walking trip</div>
-                <div className="tour-name">walking the alpe-adria trial</div>
-                <div className="tour-duration">
-                  <b>Duration:</b> 7 days
+                <div className="description-box">
+                  <div className="tour-type">self-guided walking trip</div>
+                  <div className="tour-name">walking the alpe-adria trial</div>
+                  <div className="tour-duration">
+                    <b>Duration:</b> 7 days
+                  </div>
+                  <div className="tour-difficulty">
+                    <b>Difficulty:</b> 3,5/5
+                  </div>
+                  <div className="tour-schedule">
+                    <b>When:</b> June to mid September
+                  </div>
+                  <div className="tour-small-description">
+                    Experience high alpine scenery in the Julian Alps while
+                    hiking beautiful trails without technical difficulties or
+                    sheer drops.{" "}
+                  </div>
                 </div>
-                <div className="tour-difficulty">
-                  <b>Difficulty:</b> 3,5/5
-                </div>
-                <div className="tour-schedule">
-                  <b>When:</b> June to mid September
-                </div>
-                <div className="tour-small-description">
-                  Experience high alpine scenery in the Julian Alps while hiking
-                  beautiful trails without technical difficulties or sheer
-                  drops.{" "}
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

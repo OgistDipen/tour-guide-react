@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const ToursStyle = styled.div`
   padding: 0px 380px;
@@ -23,6 +23,7 @@ const ToursStyle = styled.div`
       justify-content: space-between;
       margin: 25px 0px;
     }
+
     .tour {
       -webkit-box-shadow: 0px -1px 16px -1px rgba(0, 0, 0, 0.3);
       -moz-box-shadow: 0px -1px 16px -1px rgba(0, 0, 0, 0.3);
@@ -30,7 +31,9 @@ const ToursStyle = styled.div`
       background: #f1f1f1;
       width: 49%;
       border-radius: 5px;
-
+      a {
+        text-decoration: none;
+      }
       .image-box {
         position: relative;
 
@@ -132,6 +135,6 @@ const ToursStyle = styled.div`
       height: auto !important;
     }
   }
-`
+`;
 
-export default ToursStyle
+export default ToursStyle;
