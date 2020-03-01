@@ -63,7 +63,7 @@ class ResponsiveNavbar extends Component {
             <li>
               <p
                 onClick={() => {
-                  this.closeMenuAndChangePage("/about");
+                  this.closeMenuAndChangePage("about");
                 }}
               >
                 About
@@ -73,7 +73,7 @@ class ResponsiveNavbar extends Component {
               <p
                 to="/contact"
                 onClick={() => {
-                  this.closeMenuAndChangePage("/contact");
+                  this.closeMenuAndChangePage("contact");
                 }}
               >
                 Contact

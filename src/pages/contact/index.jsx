@@ -7,7 +7,7 @@ const ContactPage = () => (
   <>
     <Header />
     <ContactStyle>
-      <p>ABOUT PAGE</p>
+      <p>Contact PAGE</p>
     </ContactStyle>
     <Footer />
   </>
