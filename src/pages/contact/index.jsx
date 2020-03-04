@@ -32,13 +32,15 @@ class ContactPage extends Component {
                   subject: "Subject TEST",
                   message: "TEST MESSAGTE"
                 };
-
-                await axios.post(`http://localhost:4050/mail-contact/test`, {
-                  // mailerTo: this.state.message.email,
-                  mailerTo: "ogistdipen@outlook.com",
-                  mailerSubject: "subjectTesting",
-                  mailerText: "TEXT TESDTING"
-                });
+                await axios.post(
+                  `https://tours-backend.herokuapp.com/mail-contact/test`,
+                  {
+                    // mailerTo: this.state.message.email,
+                    mailerTo: "ogistdipen@outlook.com",
+                    mailerSubject: "subjectTesting",
+                    mailerText: "TEXT TESDTING"
+                  }
+                );
 
                 values.firstName = "";
                 values.lastName = "";
