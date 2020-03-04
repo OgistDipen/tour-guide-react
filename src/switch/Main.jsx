@@ -21,11 +21,7 @@ const DefaultSwitch = () => (
 class Main extends Component {
   render() {
     let routes = <DefaultSwitch />;
-    return (
-      <BrowserRouter>
-        <Switch>{routes}</Switch>
-      </BrowserRouter>
-    );
+    return routes;
   }
 }
 
