@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import { Router } from "react-router-dom";
+import { Router, BrowserRouter } from "react-router-dom";
 import history from "./history";
 import Main from "./switch/Main";
 import GlobalStyle from "./styles/GlobalStyle";
@@ -14,10 +14,12 @@ history.listen(location => {
 });
 
 ReactDOM.render(
-  <Router history={history}>
-    <GlobalStyle />
-    <Main />
-  </Router>,
+  <BrowserRouter>
+    <Router history={history}>
+      <GlobalStyle />
+      <Main />
+    </Router>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
