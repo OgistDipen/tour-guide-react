@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const HeaderStyle = styled.header`
   height: 75px;
@@ -6,6 +6,10 @@ const HeaderStyle = styled.header`
   font-size: 16px;
   position: relative;
   background: #fbfcfd;
+  -webkit-box-shadow: 0px 16px 19px -10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 16px 19px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 16px 19px -10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
   ul {
     display: flex;
     .logo {
@@ -64,6 +68,6 @@ const HeaderStyle = styled.header`
       }
     }
   }
-`
+`;
 
-export default HeaderStyle
+export default HeaderStyle;

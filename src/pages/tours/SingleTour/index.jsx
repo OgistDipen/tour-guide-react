@@ -166,7 +166,7 @@ class SingleTour extends Component {
             </div>
             <div className="overview">
               <p className="title">Overview</p>
-              <p className="overview-description">
+              <div className="overview-description">
                 <p>
                   {" "}
                   Explore the Alpine Foothills is a easygoing trip of refreshing
@@ -195,7 +195,7 @@ class SingleTour extends Component {
                   where traditional meals are made by the farmer’s families, and
                   to experience alpine cuisine served by a friendly hand.
                 </p>
-              </p>
+              </div>
             </div>
           </div>
           <div className="image-map-section">
