@@ -3,7 +3,7 @@ import ResponsiveNavbarStyle from "./style";
 import { Link } from "react-router-dom";
 import SVGInline from "react-svg-inline";
 import { logo, x, burger } from "../../assets/icons";
-import { withRouter } from "react-router";
+// import { withRouter } from "react-router";
 
 class ResponsiveNavbar extends Component {
   constructor() {
@@ -77,4 +77,4 @@ class ResponsiveNavbar extends Component {
   }
 }
 
-export default withRouter(ResponsiveNavbar);
+export default ResponsiveNavbar;
